@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an idea or improvement for Smallbird
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository only holds release binaries — feature requests here are read and
+        triaged, but development happens in a private repository. You can also send ideas
+        directly to support@smallbird.in.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true

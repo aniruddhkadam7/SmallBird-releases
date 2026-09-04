@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Smallbird Support
+    url: mailto:support@smallbird.in
+    about: For account, billing, or website issues — not covered by this repository.
+  - name: Smallbird Website
+    url: https://smallbird.in
+    about: Product info, pricing, and downloads.
