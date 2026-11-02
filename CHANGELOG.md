@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Smallbird Windows app are documented here, alongside the
+All notable changes to the Smallbird desktop app (Windows and Mac) are documented here, alongside the
 [GitHub Releases](https://github.com/aniruddhkadam7/SmallBird-releases/releases) that ship them.
 Each release includes a signed installer and an auto-update manifest; the app updates itself
 automatically.

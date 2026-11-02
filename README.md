@@ -7,7 +7,7 @@
 
   [![Latest release](https://img.shields.io/github/v/release/aniruddhkadam7/SmallBird-releases?label=latest%20release)](https://github.com/aniruddhkadam7/SmallBird-releases/releases/latest)
   [![Downloads](https://img.shields.io/github/downloads/aniruddhkadam7/SmallBird-releases/total?label=downloads)](https://github.com/aniruddhkadam7/SmallBird-releases/releases)
-  [![Platform](https://img.shields.io/badge/platform-Windows-0078D6)](https://smallbird.in/download)
+  [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-0078D6)](https://smallbird.in/download)
   [![Website](https://img.shields.io/badge/website-smallbird.in-000000)](https://smallbird.in)
 
   **[Website](https://smallbird.in) · [Download](https://smallbird.in/download) · [Pricing](https://smallbird.in/pricing) · [Releases](https://github.com/aniruddhkadam7/SmallBird-releases/releases)**
@@ -23,7 +23,7 @@ built around **Interview Mode**: a session where Smallbird transcribes the conve
 on your machine and surfaces context-aware suggestions grounded in your CV and the job
 description.
 
-This repository distributes the official **Windows installer** for Smallbird. It contains only
+This repository distributes the official **Windows and macOS installers** for Smallbird. It contains only
 built releases and installer assets — the application source code lives in a private repository.
 For the full product story, feature pages, and pricing, see **[smallbird.in](https://smallbird.in)**.
 
@@ -52,7 +52,7 @@ at how these work.
 | Platform | Status |
 |---|---|
 | Windows 10 / 11 (64-bit) | ✅ Available now |
-| macOS | 🔜 Coming soon |
+| macOS 14.6 or later (Apple Silicon and Intel) | ✅ Available now |
 
 ## Install
 
@@ -60,9 +60,15 @@ at how these work.
 Download the latest installer at **[smallbird.in/download](https://smallbird.in/download)**.
 
 **Option 2 — from this repository:**
-Grab the latest `Smallbird-Setup.exe` (or the versioned `Smallbird_<version>_x64-setup.exe`) from
-the **[Releases](https://github.com/aniruddhkadam7/SmallBird-releases/releases/latest)** page and
-run it. No account is required to install — signing in is only needed to start a session.
+Grab the latest installer from the
+**[Releases](https://github.com/aniruddhkadam7/SmallBird-releases/releases/latest)** page and run it:
+
+- **Windows:** `Smallbird-Setup.exe` (or the versioned `Smallbird_<version>_x64-setup.exe`)
+- **Mac:** `Smallbird-Mac.dmg` (or the versioned `Smallbird_<version>_universal.dmg`) — open it and
+  drag Smallbird into Applications. The first time you open it, if macOS says it can't verify the
+  app, go to System Settings → Privacy & Security and click **Open Anyway**.
+
+ No account is required to install — signing in is only needed to start a session.
 
 Once installed, Smallbird checks for and applies new versions automatically.
 
@@ -74,7 +80,9 @@ regular use, priced in INR with UPI, Google Pay, PhonePe, Paytm, and card suppor
 
 ## Known limitations
 
-- macOS is not yet supported — Windows 10/11 (64-bit) only, for now.
+- On Mac, Smallbird needs macOS 14.6 or later (earlier versions can't capture system audio), and
+  asks for Microphone, System Audio Recording and Screen Recording permission the first time each
+  is used.
 - Analyze Screen reads your primary display on demand; it isn't a continuous background capture.
 - Smallbird works from audio and (when you trigger it) your screen — it doesn't integrate directly
   with any specific meeting platform's API; it works as a general overlay instead.
@@ -92,7 +100,7 @@ regular use, priced in INR with UPI, Google Pay, PhonePe, Paytm, and card suppor
 
 ## About this repository
 
-This repo exists to distribute signed Windows installers and power in-app auto-updates. It does
+This repo exists to distribute signed Windows and macOS installers and power in-app auto-updates. It does
 **not** contain Smallbird's application source code, which is maintained in a private repository.
 Issues here are welcome for install problems, update issues, or bugs you hit while using the app —
 see [Issues](https://github.com/aniruddhkadam7/SmallBird-releases/issues). Since the source isn't

@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a bug. This repository covers the Windows
-        installer and app releases — for account, billing, or website issues, please email
+        and Mac installers and app releases — for account, billing, or website issues, please email
         support@smallbird.in instead.
   - type: input
     id: version
@@ -19,8 +19,8 @@ body:
   - type: input
     id: os
     attributes:
-      label: Windows version
-      placeholder: "e.g. Windows 11 23H2, 64-bit"
+      label: Operating system
+      placeholder: "e.g. Windows 11 23H2, 64-bit — or macOS 15.2, Apple Silicon"
     validations:
       required: true
   - type: textarea
